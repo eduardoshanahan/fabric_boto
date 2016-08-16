@@ -6,6 +6,6 @@ RUN apk update
 RUN apk add python
 RUN apk add --virtual .install_dependencies python-dev build-base py-pip && \
     pip install fabric && \
-    pip install boto && \
+    pip install boto3 && \
     rm -r /var/cache/apk && \
     apk del .install_dependencies
