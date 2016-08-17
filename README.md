@@ -1,6 +1,6 @@
 # Python Fabric and Boto
 
-Use this to setup remote servers in EC2 and OVH.
+Use this to control remote servers in EC2 and OVH using Python.
 
 [Python Fabric](http://www.fabfile.org/)
 
