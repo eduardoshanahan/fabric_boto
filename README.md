@@ -23,5 +23,5 @@ docker run --rm -it eduardoshanahan/fabric_boto:latest
 If you want to make some changes and version it, bumpversion is available
 
 ```bash
-bumpversion minor
+bumpversion patch
 ```
