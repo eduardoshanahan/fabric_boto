@@ -1,9 +1,8 @@
-FROM alpine:3.4
+FROM eduardoshanahan/python:latest
 
 MAINTAINER Eduardo Shanahan <contact@eduardoshanahan.com>
 
 RUN apk update \
-&&  apk add python \
 &&  apk add --virtual .install_dependencies python-dev build-base py-pip \
 &&  pip install fabric \
 &&  pip install boto3 \
