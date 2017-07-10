@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+
+  shell:
+    image: eduardoshanahan/fabric_boto:latest
+    container_name: eduardoshanahan_fabric_boto
+    entrypoint:
+      - /bin/sh
