@@ -8,4 +8,4 @@ RUN apk --update \
 &&  pip install boto3 \
 &&  apk del .install_dependencies_fabric_boto
 
-CMD ["/bin/sh"]
+ENTRYPOINT ["/bin/sh"]
