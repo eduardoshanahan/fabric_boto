@@ -1,21 +1,11 @@
-FROM eduardoshanahan/python:latest
+FROM eduardoshanahan/fabric:latest
 
 MAINTAINER Eduardo Shanahan <contact@eduardoshanahan.com>
 
 RUN apk --update \
-    add --virtual .install_dependencies \
-    gcc \
-    musl-dev \
-    python-dev \
-    libffi-dev \
-    openssl-dev \
-    build-base \
+    add --no-cache --virtual .install_dependencies_fabric_boto \
     py-pip \
-&&  pip install --upgrade pip \
-&&  pip install cffi \
-&&  pip install fabric \
 &&  pip install boto3 \
-&&  rm -r /var/cache/apk \
-&&  apk del .install_dependencies
+&&  apk del .install_dependencies_fabric_boto
 
 CMD ["/bin/sh"]
