@@ -1,7 +1,8 @@
 # Changelog
 
-## 2017-12-14
+## [1.4.8.2] - 2017-12-14
 
+* Changed: Updated Fabric base image to 1.14.0.2
 * Changed: added a tag creation script
 
 ## [1.4.8.1] - 2017-12-12
