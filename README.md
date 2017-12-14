@@ -23,6 +23,13 @@ Or with Docker Compose
 ```
 docker-compose run --rm shell
 ```
+## Building an image in Docker Hub
+
+If for any reason the tagged build fails, you can fire a fresh one running
+
+```
+./build_image.sh
+```
 
 ## Development
 
