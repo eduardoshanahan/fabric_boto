@@ -1,2 +1,2 @@
 IMAGE_VERSION=$(cat version.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
-curl -H "Content-Type: application/json" --data '{"source_type": "Tag", "source_name":"'$IMAGE_VERSION'"}' -X POST https://registry.hub.docker.com/u/eduardoshanahan/fabric/trigger/29a6a74c-b879-4d98-840c-575c1e561688/
+curl -H "Content-Type: application/json" --data '{"source_type": "Tag", "source_name":"'$IMAGE_VERSION'"}' -X POST https://registry.hub.docker.com/u/eduardoshanahan/fabric_boto/trigger/f9677382-2eb9-4d12-8f9c-5bb621fb2938/
